@@ -47,7 +47,7 @@ const typeController = (e) => {
       newLetter === " " ? "▪" : newLetter
     }</span>`;
   } else {
-    console.log((errorCount += 1));
+    errorCount += 1;
     display.innerHTML += `<span class="red">${
       newLetter === " " ? "▪" : newLetter
     }</span>`;

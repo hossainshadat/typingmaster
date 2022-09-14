@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>B6 Type Monster Debug|| Proggramming Hero Assignment 7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body class="bg-success bg-opacity-10 container my-5">
+    <header class="container my-5">
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+                <a href="./index.html" class="navbar-brand fs-1 fw-bold">B6 Type Monster Debug</a>
+                <div class="d-flex fs-5 fw-bolder">
+                    <a class="pe-5" href="./index.html">Main</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h1 class="fs-1 text-center fw-bold">Question Answer</h1>
+
+    <main class="my-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fs-5 fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Difference between LocalStorage and SessionStorage
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        LocalStorage and SessionStorage are almost identical and have the same API. The difference is
+                        that with sessionStorage, the data is persisted only until the window or tab is closed. With
+                        localStorage, the data is persisted until the user manually clears the browser cache or until
+                        your web app clears the data.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Differences Between Global Scope and Block Scope
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Global Scope</strong> <br>
+
+                        The Javascript global scope is the context where everything in a Javascript program executes by
+                        default. This scope includes all variables, objects, and references that are not contained
+                        within a customized scope defined by a programmer.
+
+                        Global scope is the entire Javascript execution environment. Any variables assigned without an
+                        explicit scope (using the var, let, or const keywords) automatically become global variables.
+                        <br>
+                        <strong>Block Scope </strong><br>
+                        Block Scope: A variable when declared inside the if or switch conditions or inside for or while
+                        loops, are accessible within that particular condition or loop. <br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed fs-5 fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        JavaScript Event Loop
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The event loop is the secret behind JavaScript’s asynchronous programming. JS executes all
+                        operations on a single thread, but using a few smart data structures, it gives us the illusion
+                        of multi-threading. Let’s take a look at what happens on the back-end.
+
+
+
+                        The call stack is responsible for keeping track of all the operations in line to be executed.
+                        Whenever a function is finished, it is popped from the stack.
+
+                        The event queue is responsible for sending new functions to the stack for processing. It follows
+                        the queue data structure to maintain the correct sequence in which all operations should be sent
+                        for execution.
+
+                        Whenever an async function is called, it is sent to a browser API. These are APIs built into the
+                        browser. Based on the command received from the call stack, the API starts its own
+                        single-threaded operation.
+
+                        An example of this is the setTimeout method. When a setTimeout operation is processed in the
+                        stack, it is sent to the corresponding API which waits till the specified time to send this
+                        operation back in for processing.
+
+                        Where does it send the operation? The event queue. Hence, we have a cyclic system for running
+                        async operations in JavaScript. The language itself is single-threaded, but the browser APIs act
+                        as separate threads.
+
+                        The event loop facilitates this process; it constantly checks whether or not the call stack is
+                        empty. If it is empty, new functions are added from the event queue. If it is not, then the
+                        current function call is processed.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed  fs-5 fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Types of Javascript Undefined
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>1. Uninitialized variable</strong> <br>
+                        <p>A declared variable but not yet assigned with a value (uninitialized) is by default
+                            undefined.</p> <br>
+                        <strong>2: Increase cohesion</strong> <br>
+                        <p>Cohesion characterizes the degree to which the elements of a module (namespace, class,
+                            method, block of code) belong together. The cohesion can be high or low.</p> <br>
+                        <strong>3: Accessing a non-existing property</strong> <br>
+                        <p>When accessing a non-existing object property, JavaScript returns undefined.</p> <br>
+                        <strong>4: Check the property existence</strong> <br>
+                        <p>Fortunately, JavaScript offers a bunch of ways to determine if the object has a specific
+                            property:
+
+                            <li>obj.prop !== undefined: compare against undefined directly</li>
+                            <li>typeof obj.prop !== 'undefined': verify the property value type</li>
+                            <li> obj.hasOwnProperty('prop'): verify whether the object has an own property</li>
+                            <li>'prop' in obj: verify whether the object has an own or inherited property
+                        </p>
+                        </li> <br>
+                        <strong>5: Destructuring to access object properties</strong> <br>
+                        <p>When accessing an object property, sometimes it's necessary to set a default value if the
+                            property does not exist.
+                        </p>
+                        <br>
+                        <strong>6: Fill the object with default properties</strong> <br>
+                        <p>If there is no need to create variables for every property, as the destructuring assignment
+                            does, the object that misses some properties can be filled with default values.
+
+                            The ES2015 Object.assign(target, source1, source2, ...) copies the values of all enumerable
+                            own properties from one or more source objects into the target object. The function returns
+                            the target object.
+                        </p>
+                        <br><strong>7: Function parameters</strong> <br>
+                        <p>The function parameters implicitly default to undefined.
+
+                            Usually a function defined with a specific number of parameters should be invoked with the
+                            same number of arguments
+                        </p>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
