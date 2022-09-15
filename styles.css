@@ -146,11 +146,6 @@ button {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-/* #histories {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-} */
 
 .card {
   max-width: 100%;
@@ -186,14 +181,6 @@ button {
   position: fixed;
   top: 0;
 }
-
-/* custom styles  */
-
-/* .padding {
-  padding: 10px 0;
-} */
-
-/* End custom styles  */
 
 @media only screen and (max-width: 700px) {
   .box-container {
